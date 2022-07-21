@@ -1,0 +1,23 @@
+BANTUAN MENU :
+1. APLIKASI : Menu aplikasi penerapan CNN dan GRU untuk mengklasifikasi teks ulasan.
+   Dalam menu ini terdapat pilihan bobot yang secara default bernilai
+   bobot_optimal_256_0.01.25. Bobot diperoleh dari pelatihan pada data latih teks
+   ulasan Tokepedia sebanyak 800 data latih dan 200 data uji. Pada proses uji pada
+   data uji diperoleh akurasi 88.5%
+2. Ekstraksi CNN : Menu ekstraksi CNN akan mengambil data berupa teks dan akan menghasilkan
+   input matriks sebagai hasil ekstraksi. Bobot/Kernel pada CNN dapat dilihat pada menu ini.
+   Pada menu ini diperlukan inisialisasi banyak kernel dengan bilangan bulat antra [1,1000] dan 
+   banyak baris kernel dengan bilangan bulat antara [3,10].
+3. Pelatihan GRU : Menu Pelatihan GRU akan mengambil hasil input matriks CNN untuk dilatih dan mencari
+   bobot optimal. Bobot optimal akan diperoleh ketika iterasi telah mencapai maksimal iterasi yang diinput,
+   atau loss/error kurang dari minimal error yang diharapkan. Pilihan kernel yang tersedia berasal dari
+   ekstraksi CNN yang telah dilakukan. Jumlah hidden node 1 - Panjang maksimal input matriks. Learning rate
+   bernilai bilangan real 0-1 dan jumlah iterasi bilangan bulat antara [1-1000]
+4. Developer : Menu ini berisi informasi pengembang aplikasi.
+5. Bantuan Aplikasi.
+
+Petunjuk penggunaan :
+1. Anda dapat mengklasifikasi teks ulasan pada menu Aplikasi atau melatih terlebih dahulu.
+2. Jika ingin pelatihan terlebih dahulu, maka lakukan ekstraksi teks ulasan untuk mendapatkan input matriks
+   pada menu Ekstraksi CNN
+3. Lakukakan pelatihan GRU untuk mendapat kan bobot optimal dengan hasil yang diperoleh dari proses ekstraksi
